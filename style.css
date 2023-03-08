@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 1%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 12, 32); 
+    
+}
+.container{
+    position: relative;
+    grid-column: span 4;
+}
+
+
+.container .content{
+    background: rgb(0 0 0 / 30%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: 3px 3px 30px #9f4ff6;
+    backdrop-filter: blur(20px);
+}
+
+.container .content .result{
+    grid-column: span 4;
+    outline: none;
+    border: none;
+    height: 80px;
+    font-size: 20px;
+    padding-right: 15px;
+    text-align: right;
+    background: transparent;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.container .content .number{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.container .content .number:hover{
+background: #3a2dea ;
+color: black;
+}
+
+.container .content .clear{
+    grid-column: span 2;
+    width: 140px;
+}
